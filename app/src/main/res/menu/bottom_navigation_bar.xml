@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_main"
+        android:title="메인"
+        android:enabled="true"
+        android:icon="@drawable/auth_req"
+        />
+    <item
+        android:id="@+id/menu_search"
+        android:title="검색"
+        android:enabled="true"
+        android:icon="@drawable/auth_res"
+        />
+    <item
+        android:id="@+id/menu_curator"
+        android:title="큐레이터"
+        android:enabled="true"
+        android:icon="@drawable/auth_use"
+        />
+    <item
+        android:id="@+id/menu_my_page"
+        android:title="내 서재"
+        android:enabled="true"
+        android:icon="@drawable/my_page"
+        />
+</menu>

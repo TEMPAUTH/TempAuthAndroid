@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#C8CACC</color>
+    <color name="colorPrimaryDark">#9BA7B7</color>
+    <color name="colorAccent">#F4B900</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="aspen_gold">#FFD858</color>
+    <color name="aspen_gold_dark">#F4B900</color>
+    <color name="lunar_rock">#C8CACC</color>
+    <color name="lunar_rock_blue">#A7B0BE</color>
+    <color name="lunar_rock_white">#E9EAE8</color>
+    <color name="ebony">#3D4249</color>
+
 </resources>
+
