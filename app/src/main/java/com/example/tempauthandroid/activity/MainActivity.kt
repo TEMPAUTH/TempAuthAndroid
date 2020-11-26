@@ -1,7 +1,8 @@
-package com.example.tempauthandroid
+package com.example.tempauthandroid.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.tempauthandroid.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
