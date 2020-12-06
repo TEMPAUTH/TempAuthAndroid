@@ -19,7 +19,7 @@ class AuthUseFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_auth_req, container, false)
+        return inflater.inflate(R.layout.fragment_auth_use, container, false)
     }
 
 }
