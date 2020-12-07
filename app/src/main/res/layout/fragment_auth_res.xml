@@ -6,37 +6,81 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.AuthResFragment">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/auth_res_ctl"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fitsSystemWindows="true"
+        app:contentScrim="@color/colorPrimary"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-    <TextView
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/auth_res_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="권한"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/ebony"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 승인 "
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/aspen_gold_dark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="신청"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/ebony"/>
+        </LinearLayout>
+
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/auth_res_tl"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="권한"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textColor="@color/ebony"/>
-    <TextView
-        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/auth_res_ctl"
+        app:tabSelectedTextColor="@color/aspen_gold_dark">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="승인할" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="승인" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" 승인 "
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textColor="@color/aspen_gold_dark"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="신청"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textColor="@color/ebony"/>
-    </LinearLayout>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/auth_res_tl"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_auth_res_after" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

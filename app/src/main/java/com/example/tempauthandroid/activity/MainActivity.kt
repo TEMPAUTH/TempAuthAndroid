@@ -29,8 +29,8 @@ class MainActivity : AppCompatActivity() {
 
         main_activity_bnv.bringToFront()
 
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.main_activity_fg, authUseFragment).commit()
+//        supportFragmentManager.beginTransaction()
+//            .replace(R.id.main_activity_fg, authUseFragment).commit()
 
         main_activity_bnv.setOnNavigationItemSelectedListener {
             when (it.itemId) {
